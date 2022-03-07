@@ -133,7 +133,7 @@
     justify-content: space-evenly;
 
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     visibility: hidden;
     
     margin: 0 -3rem;
@@ -170,7 +170,7 @@
   .navbar-login {
     position: absolute;
     right: -100vw;
-    top: 90vh;
+    top: 80vh;
     justify-content: space-evenly;
 
     width: 100vw;
@@ -204,13 +204,13 @@
 @media (min-width: 455px) and (max-width: 890px) {
   .navbar-menu {
     position: absolute;
-    top: -90vh;
+    top: -80vh;
     flex-direction: column;
     justify-content: space-evenly;
 
     width: 50vw;
     right: 0;
-    height: 90vh;
+    height: 80vh;
     visibility: hidden;
     
     margin: 0 -3rem;
@@ -242,8 +242,8 @@
 
   .navbar-login {
     position: absolute;
-    right: -100vw;
-    top: 90vh;
+    right: -50vw;
+    top: 80vh;
     justify-content: space-evenly;
 
     width: 50vw;
