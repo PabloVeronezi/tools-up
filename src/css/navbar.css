@@ -128,7 +128,7 @@
 @media (min-width: 320px) and (max-width: 450px) {
   .navbar-menu {
     position: absolute;
-    top: -90vh;
+    top: -80vh;
     flex-direction: column;
     justify-content: space-evenly;
 
@@ -138,7 +138,7 @@
     
     margin: 0 -3rem;
 
-    background-color: var(--secondary-color);
+    background-color: #fff;
     transition: .8s ease-in-out;
 
     z-index: 1000;
@@ -170,7 +170,7 @@
   .navbar-login {
     position: absolute;
     right: -100vw;
-    top: 80vh;
+    top: 90vh;
     justify-content: space-evenly;
 
     width: 100vw;
@@ -182,13 +182,57 @@
     background-color: var(--main-color);
     transition: .8s ease-in-out;
 
-    z-index: -2;
+    z-index: 10000;
+  }
+
+  .navbar-login--logIn, .navbar-login--signUp {
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   .active-login {
     visibility: visible;
     right: 0;
     transition: .8s ease-in-out;
+    transition-delay: 1s;
+  }
+
+  .navbar-cart {
+    position: absolute;
+    left: -100vw;
+    top: 80vh;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 10vh;
+    visibility: hidden;
+
+    margin: 0 -3rem;
+    
+    background-color: var(--secondary-color);
+
+    transition: .8s ease-in-out;
+    z-index: 10000;
+  }
+
+  .fa-cart-shopping {
+    font-size: 1.1rem;
+    color: var(--main-color);
+  }
+
+  .active-cart {
+    visibility: visible;
+    left: 0;
+    transition: .8s ease-in-out;
+    transition-delay: .5s;
+  }
+
+  .navbar-cart::before {
+    content: "shopping cart";
+    font-family: var(--font-roboto);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .navbar-hamburger {
@@ -243,7 +287,7 @@
   .navbar-login {
     position: absolute;
     right: -50vw;
-    top: 80vh;
+    top: 90vh;
     justify-content: space-evenly;
 
     width: 50vw;
@@ -262,6 +306,45 @@
     visibility: visible;
     right: 0;
     transition: .8s ease-in-out;
+    transition-delay: .8s;
+  }
+
+  .navbar-cart {
+    position: absolute;
+    right: -50vw;
+    top: 80vh;
+    justify-content: center;
+    
+    width: 50vw;
+    height: 10vh;
+    visibility: hidden;
+
+    margin: 0 -3rem;
+    
+    background-color: var(--secondary-color);
+
+    transition: .8s ease-in-out;
+    z-index: 10000;
+  }
+
+  .fa-cart-shopping {
+    font-size: 1.1rem;
+    color: var(--main-color);
+  }
+
+  .active-cart {
+    visibility: visible;
+    right: 0;
+    transition: .8s ease-in-out;
+    transition-delay: .4s;
+  }
+
+  .navbar-cart::before {
+    content: "shopping cart";
+    font-family: var(--font-roboto);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   .navbar-hamburger {
