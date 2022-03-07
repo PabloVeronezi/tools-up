@@ -119,7 +119,10 @@
 
 .navbar-hamburger {
   display: none;
-  cursor: pointer;
+}
+
+.close-menu {
+  display: none;
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
