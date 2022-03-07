@@ -210,7 +210,7 @@
 
     width: 50vw;
     right: 0;
-    height: calc(100vh - 50px);
+    height: 90vh;
     visibility: hidden;
     
     margin: 0 -3rem;
@@ -218,13 +218,12 @@
     background-color: var(--secondary-color);
     transition: .8s ease-in-out;
 
-    z-index: -1;
+    z-index: 10000;
   }
 
   .active {
     visibility: visible;
-    top: 50px;
-    /* height: 0; */
+    top: 0;
     transition: .8s ease-in-out;
   }
 
@@ -242,7 +241,27 @@
   }
 
   .navbar-login {
-    width: 40%;
+    position: absolute;
+    right: -100vw;
+    top: 90vh;
+    justify-content: space-evenly;
+
+    width: 50vw;
+    height: 10vh;
+    visibility: hidden;
+
+    margin: 0 -3rem;
+
+    background-color: var(--main-color);
+    transition: .8s ease-in-out;
+
+    z-index: 10000;
+  }
+
+  .active-login {
+    visibility: visible;
+    right: 0;
+    transition: .8s ease-in-out;
   }
 
   .navbar-hamburger {
