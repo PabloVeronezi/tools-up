@@ -130,7 +130,7 @@
     justify-content: space-evenly;
 
     width: 100vw;
-    height: calc(90vh - 50px);
+    height: 90vh;
     visibility: hidden;
     
     margin: 0 -3rem;
@@ -138,14 +138,25 @@
     background-color: var(--secondary-color);
     transition: .8s ease-in-out;
 
-    z-index: -1;
+    z-index: 1000;
   }
 
   .active {
     visibility: visible;
-    top: 50px;
-    /* height: 0; */
+    top: 0;
     transition: .8s ease-in-out;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 10px;
+    right: 3rem;
+
+    border: none;
+    background: none;
+
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
   .navbar-menu--links {
