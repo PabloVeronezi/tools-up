@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 3.5rem;
+  min-height: 5rem;
 }
 
 .logo {
@@ -10,7 +10,7 @@
   align-items: baseline;
   column-gap: .2rem;
 
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--verde-escuro);  
 }
@@ -25,7 +25,7 @@
 }
 
 .fa-bars {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--verde-escuro);
 }
 
@@ -38,7 +38,7 @@
   height: 0;
 
   position: absolute;
-  top: 3.5rem;
+  top: 5rem;
   right: 0;
   visibility: hidden;
 
@@ -77,10 +77,10 @@
 }
 
 .dropdown {
-  position: relative;
   display: inline-block;
 
   z-index: 1001;
+  position: relative;
 }
 
 .dropdown-btn {
@@ -95,8 +95,10 @@
 .dropdown-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
-  bottom: -6.625rem;
+  top: 100%;
   right: -100vw;
 
   width: 100%;
@@ -110,16 +112,15 @@
 }
 
 .dropdown-content a {
-  height: 100%;
-  width: 100%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
   
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--verde-escuro)
 }
 
 .show-dropdown {
