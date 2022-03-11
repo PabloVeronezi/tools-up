@@ -1,0 +1,64 @@
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+
+  height: calc(100vh - 3.5rem);
+  margin: 0;
+  padding: 1rem;
+
+  background-color: var(--cinza);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.ferramentas-banner {
+  display: none;
+}
+
+.banner-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+  text-align: center;
+
+
+  height: 100%;
+}
+
+.slogan-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--verde-escuro);
+}
+
+.slogan-info {
+  font-size: 1.5rem;
+  color: var(--cinza-claro);  
+}
+
+.slogan-btn {
+  width: 100%;
+  min-height: 2.5rem;
+  
+  background-color: var(--verde-claro);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0 1em var(--cinza-claro);
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: var(--verde-escuro);
+}

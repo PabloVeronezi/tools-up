@@ -10,8 +10,11 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/layout.css">
-  <link rel="stylesheet" href="./src/css/navbar.css">
-  <link rel="stylesheet" href="./src/css/banner.css">
+  <link rel="stylesheet" href="./src/css/navigation.css">
+  <link rel="stylesheet" href="./src/css/main-info.css">
+  <link rel="stylesheet" href="./src/css/booking.css">
+  <link rel="stylesheet" href="./src/css/how_works.css">
+  <link rel="stylesheet" href="./src/css/contact.css">
 
   <!-- Fonts Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,125 +29,129 @@
 <body>
 
   <header>
-    <nav class="navbar container">
-      <span class="navbar-logo">
+    <div class="navigation container">
+      <div class="logo">
         <i class="fa-solid fa-box-open"></i>
-        tools up
-      </span>
-      <ul class="navbar-menu">
-        <li>
-          <a href="" class="navbar-menu--links">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="" class="navbar-menu--links">
-            List your tools
-          </a>
-        </li>
-        <li>
-          <a href="" class="navbar-menu--links">
-            How it works
-          </a>
-        </li>
-        <li>
-          <a href="" class="navbar-menu--links">
-            Contact
-          </a>
-        </li>
-
-        <button class="close-menu">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </ul>
-      <div class="navbar-login">
-        <button class="navbar-login--logIn">
-          log in
-        </button>
-        <button class="navbar-login--signUp">
-          sing up
-        </button>
+        Tools Up
       </div>
 
-      <button class="navbar-cart">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-
-      <button class="navbar-hamburger">
+      <button class="menu-hamburger" id="burger-btn">
         <i class="fa-solid fa-bars"></i>
       </button>
-    </nav>
+
+      <nav class="navbar" id="navbar">
+        <ul class="navbar-menu">
+          <li class="dropdown">
+            <button class="dropdown-btn" id="dropdown-btn">
+              Ferramentas
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="#">dewalt</a>
+              <a href="#">bosch</a>
+              <a href="#">makita</a>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-menu--links">liste suas ferramentas</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-menu--links">como funciona</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-menu--links">fale conosco</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-access">
+          <li>
+            <a href="#" class="navbar-access--links">entrar</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-access--links">cadastrar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- <main>
+  <main>
     <section class="main-info container">
       <div class="banner">
-        <img src="./src/img/tools.png" alt="tools" class="banner-tools">
-      </div>
-      <div class="banner-slogan">
-        <h1 class="banner-slogan--title">
-          Rentals delivered to your door
-        </h1>
-        <span class="banner-slogan--description">
-          Rent high-quality gear from trusted equipment owners across the country
-        </span>
-        <button class="banner-slogan--btn">browse products</button>
-      </div>
-
-      <div class="book-product">
-        <form class="book-product--form">
-          <h2 class="form-title">Book a product</h4>
-
-            <label for="delivery-date" class="form-label">
-              Delivery date
-            </label>
-            <input type="text" class="form-input" id="delivery-date">
-
-            <label for="return-date" class="form-label">
-              Return date
-            </label>
-            <input type="text" class="form-input" id="return-date">
-
-            <label for="location" class="form-label">
-              Location
-            </label>
-            <input type="text" class="form-input" id="location">
-        </form>
+        <picture>
+          <img src="./src/img/tools.png" alt="Ferramentas" class="ferramentas-banner">
+        </picture>
+        <div class="banner-slogan">
+          <h1 class="slogan-title">Aluguéis entregues à sua porta</h1>
+          <p class="slogan-info">Alugue ferramentas de alta qualidade de proprietários de equipamentos confiáveis em
+            todo o país</p>
+          <button class="slogan-btn">procurar ferramenta</button>
+        </div>
       </div>
     </section>
 
-    <section class="how-work container">
-      <h2 class="how-work--tittle">How it works</h2>
-      <p class="how-work--description">
-        Tools-Up makes it easy for you to start a new business, kick off a new hobby, or try something new. No more
-        renting stuff from people you don't know or driving across town to the big box rental house.
+    <section class="booking">
+      <form>
+        <h1 class="form-title">Reserve uma ferramenta</h1>
+
+        <fieldset class="booking-container">
+          <label for="delivery-date" class="booking-label">Data de entrega</label>
+          <input type="text" class="booking-input icons" id="delivery-date" placeholder="&#xf073">
+
+          <label for="return-date" class="booking-label">Data de devolução</label>
+          <input type="text" class="booking-input icons" id="return-date" placeholder="&#xf073">
+
+          <label for="location" class="booking-label">Localização</label>
+          <input type="text" class="booking-input icons" id="location" placeholder="&#xf3c5">
+
+          <button class="booking-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <section class="about container">
+      <h1 class="about-title">Como funciona</h1>
+      <p class="about-info">
+        Tools Up facilita você a iniciar um novo negócio, começar um novo hobbie ou tentar algo novo. Chega de alugar
+        ferramentas de pessoas que você não conhece ou dirigir toda a cidade até a loja de aluguéis.
       </p>
     </section>
-  </main> -->
+  </main>
 
-
-  <!-- <footer>
-    <div class="dev-contact container">
-      <ul class="dev-contat-social">
-        <li class="social-items">
-          <a href="https://github.com/PabloVeronezi" class="social-links" target="_blank">
-            <i class="fa-brands fa-linkedin"> PabloVeronezi</i>
-          </a>
-        </li>
-        <li class="social-items">
-          <a href="https://www.linkedin.com/in/pabloveronezi/" class="social-links" target="_blank">
-            <i class="fa-brands fa-github"> PabloVeronezi</i>
-          </a>
-        </li>
-      </ul>
+  <footer>
+    <div class="general-info container">
+      <div class="createdBy">
+        <h1 class="createdBy-title">Desenvolvedor</h1>
+        <ul class="createdBy-social">
+          <li>
+            <a href="#" class="createdBy-social--links" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              PabloVeronezi
+            </a>
+          </li>
+          <li>
+            <a href="#" class="createdBy-social--links" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              PabloVeronezi
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="credits">
+        <h1 class="credits-title">Créditos</h1>
+        <p class="credits-info">Background vector criado por freepik</p>
+        <a href='https://www.freepik.com/free-vector/white-abstract-background-design_12188678.htm#query=texture%20background&position=38&from_view=search'
+          target="_blank">www.freepik.com</a>
+      </div>
     </div>
-     Attribution designer
-      <a href='https://www.freepik.com/photos/wireframe-background'>Wireframe background photo created by rawpixel.com - www.freepik.com</a>
-     
-  </footer> -->
+  </footer>
 
-
-  <script src="/src/js/menu-hamburger.js"></script>
+  <script src="./src/js/dropdown.js"></script>
+  <script src="./src/js/menu_hamburger.js"></script>
 </body>
 
 </html>

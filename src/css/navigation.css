@@ -1,0 +1,155 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  column-gap: .2rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--verde-escuro);  
+}
+
+.fa-box-open {
+  color: var(--verde);
+}
+
+.menu-hamburger {
+  background: none;
+  border: none;
+}
+
+.fa-bars {
+  font-size: 1.2rem;
+  color: var(--verde-escuro);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100vw;
+  height: 0;
+
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  visibility: hidden;
+
+  transition: .7s ease-in-out;
+  background-color: var(--verde-claro);
+  overflow-y: hidden;
+}
+
+.show-navbar {
+  height: 100vh;
+  visibility: visible;
+  transition: .7s ease-in-out;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 80%;
+
+  color: var(--verde-escuro);
+}
+
+.navbar-menu li {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 2px solid var(--verde-natural);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  z-index: 1001;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -6.625rem;
+  right: -100vw;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--verde-natural);
+  transition: 1s ease-in-out;
+
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 700;
+}
+
+.show-dropdown {
+  visibility: visible;
+  right: 0;
+  transition: 1s ease-in-out;
+}
+
+.navbar-menu--links {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar-access {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 20%;
+
+  background-color: var(--verde-escuro);
+}
+
+.navbar-access--links {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  color: var(--verde-natural);
+}
+
