@@ -42,7 +42,7 @@
   right: 0;
   visibility: hidden;
 
-  transition: .7s ease-in-out;
+  transition: 1s ease-in-out;
   background-color: var(--verde-claro);
   overflow-y: hidden;
 }
@@ -50,7 +50,7 @@
 .show-navbar {
   height: 100vh;
   visibility: visible;
-  transition: .7s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .navbar-menu {
@@ -110,16 +110,16 @@
   justify-content: space-around;
   position: absolute;
   top: 100%;
-  right: -100vw;
 
   width: 100%;
-  height: calc(100vh - 13rem);
+  height: 0;
 
-  background-color: var(--verde-natural);
+  background-color: var(--verde-escuro);
   transition: 1s ease-in-out;
 
   visibility: hidden;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .dropdown-content a {
@@ -133,12 +133,13 @@
   letter-spacing: .1rem;
   font-weight: 700;
   font-size: 1.1rem;
-  border-bottom: 2px solid var(--verde-escuro)
+  color: var(--verde-natural);
+  border-bottom: 2px solid var(--verde-natural);
 }
 
 .show-dropdown {
   visibility: visible;
-  right: 0;
+  height: 62vh;
   transition: 1s ease-in-out;
 }
 
