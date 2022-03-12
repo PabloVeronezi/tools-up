@@ -42,7 +42,7 @@
   right: 0;
   visibility: hidden;
 
-  transition: 1s ease-in-out;
+  transition: .7s ease-out;
   background-color: var(--verde-claro);
   overflow-y: hidden;
 }
@@ -50,7 +50,7 @@
 .show-navbar {
   height: 100vh;
   visibility: visible;
-  transition: 1s ease-in-out;
+  transition: .7s ease-out;
 }
 
 .navbar-menu {
@@ -115,7 +115,7 @@
   height: 0;
 
   background-color: var(--verde-escuro);
-  transition: 1s ease-in-out;
+  transition: .7s ease-out;
 
   visibility: hidden;
   z-index: 1000;
@@ -140,7 +140,7 @@
 .show-dropdown {
   visibility: visible;
   height: 62vh;
-  transition: 1s ease-in-out;
+  transition: .7s ease-out;
 }
 
 .navbar-menu--links {
