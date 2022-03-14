@@ -21,7 +21,27 @@
 }
 
 .about-info {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--cinza-claro);
-  line-height: 1.3rem; 
+  line-height: 1.5rem; 
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .about-info {
+    font-size: 1.5rem;
+    width: 80%;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-info {
+    width: 80%;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }

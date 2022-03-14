@@ -29,7 +29,7 @@
 
 
 .booking-input {
-  min-width: 15em;
+  min-width: 200px;
   min-height: 2.5rem;
 
   background-color: rgba(0, 0, 0, .1);
@@ -60,4 +60,71 @@
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--verde-escuro);
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .booking form {
+    padding: 2rem;
+    row-gap: 2rem;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .booking-label {
+    font-size: 1.5rem;
+  }
+
+  .booking-input {
+    min-width: 300px;
+    min-height: 3rem;
+  }
+
+  .booking-input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .booking-btn::before {
+    content: "reservar";
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .booking form {
+    padding: 2rem;
+    row-gap: 2rem;
+  }
+  
+  .form-title {
+    font-size: 2.5rem;
+  }
+
+  .booking-label {
+    font-size: 2rem;
+  }
+
+  .booking-input {
+    min-width: 400px;
+    min-height: 3.5rem;
+  }
+
+  .booking-input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .booking-btn {
+    min-height: 3.5rem;
+    font-size: 1.5rem;
+  }
+
+  .booking-btn::before {
+    content: "reservar";
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+  }
 }

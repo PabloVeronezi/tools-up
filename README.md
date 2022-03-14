@@ -9,9 +9,11 @@ Site modelo para um serviço de aluguéis.
 
 ## O que já foi feito?
 - Definição de layout da página principal
-- Criação da barra de navegação
+- Desenvolvimento mobile first
+- Boa parte da responsividade feita
 
 ## O que falta ser feito?
-- Adicionar responsividade a barra de navegação
-- Estilizar e adicionar responsividade no restante da página
+- Adicionar media queries para telas maiores
+- Adicionar efeitos visuais nos links
+- Finalizar tudo
 

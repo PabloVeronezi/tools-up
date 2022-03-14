@@ -1,7 +1,12 @@
 const hamburger_btn = document.querySelector("#burger-btn");
 const navbar = document.querySelector("#navbar");
 
+
+
 hamburger_btn.addEventListener("click", _ => {
-  navbar.classList.toggle("show-navbar")
+  toggleClass(navbar, "show-navbar");
 })
 
+function toggleClass(element, style) {
+  element.classList.toggle(style);
+}
