@@ -73,6 +73,14 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-info {
+    padding: 0;
+  }
+  
+  .banner {
+    background-image: url("../img/banner-background.jpg");
+  }
+  
   .banner-slogan {
     row-gap: 3rem;
   }
@@ -91,5 +99,115 @@
     width: 40%;
     min-height: 4rem;
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .main-info {
+    padding: 0;
+  }
+
+  .banner {
+    flex-direction: row;
+
+    background-image: url("../img/banner-background.jpg");
+    padding: 1rem;
+  }
+
+  .banner picture {
+    position: relative;
+    width: 50%;
+    order: 2;
+  }
+
+  .ferramentas-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-slogan {
+    width: 50%;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .slogan-title {
+    text-align: initial;
+  }
+
+  .slogan-info {
+    text-align: initial;
+    font-size: 1.2rem;
+  }
+
+  .slogan-btn {
+    width: 40%;
+    font-size: .8rem;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+  }
+
+  .slogan-btn:hover {
+    background-color: var(--verde-escuro);
+    color: var(--verde-claro);
+
+    transition: .3s ease-out;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .main-info {
+    padding: 0 1.5rem;
+  }
+
+  .banner {
+    flex-direction: row;
+
+    background-image: url("../img/banner-background.jpg");
+    padding: 1rem;
+  }
+
+  .banner picture {
+    position: relative;
+    width: 50%;
+    order: 2;
+  }
+
+  .ferramentas-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-slogan {
+    width: 50%;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .slogan-title {
+    text-align: initial;
+  }
+
+  .slogan-info {
+    text-align: initial;
+    font-size: 1.4rem;
+  }
+
+  .slogan-btn {
+    width: 40%;
+    font-size: .9rem;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+  }
+
+  .slogan-btn:hover {
+    background-color: var(--verde-escuro);
+    color: var(--verde-claro);
+
+    transition: .3s ease-out;
   }
 }

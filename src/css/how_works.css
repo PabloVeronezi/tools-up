@@ -45,3 +45,35 @@
     line-height: 2.5rem;
   }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .about {
+    background-image: url("../img/banner-background.jpg");
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-info {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .about {
+    background-image: url("../img/banner-background.jpg");
+  }
+
+  .about-title {
+    font-size: 3.5rem;
+  }
+
+  .about-info {
+    width: 60%;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+}

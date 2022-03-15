@@ -272,16 +272,16 @@
     font-size: .8rem;
     cursor: pointer;
     padding: .5rem .5rem 0 .5rem;
+  }
 
-    transition: .7s ease-out;
+  .dropdown-btn:hover {
+    color: var(--verde-claro);
   }
 
   .dropdown-click {
     background-color: var(--verde-escuro);
     border-radius: 5px 5px 0 0 ;
     color: var(--verde-natural);
-
-    transition: .7s ease-out;
   }
   
   .dropdown-content {
@@ -311,6 +311,10 @@
     font-size: .8rem;
   }
 
+  .navbar-menu--links:hover {
+    color: var(--verde-claro);
+  }
+
   .navbar-access  {
     width: auto;
     column-gap: .8rem;
@@ -323,5 +327,115 @@
     text-transform: capitalize;
     font-weight: 400;
     color: var(--verde-escuro);
+  }
+
+  .navbar-access--links:hover {
+    transform: scale(2);
+    color: var(--verde-claro);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .navigation {
+    justify-content: space-evenly;
+  }
+  
+  .menu-hamburger {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 2rem;
+    visibility: visible;
+
+    height: 100%;
+    width: 80%;
+
+    background-color: transparent;
+    overflow-y: visible;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+
+  .navbar-menu li {
+    width: auto;
+  }
+  
+  .dropdown-btn {
+    font-size: .8rem;
+    cursor: pointer;
+    padding: .5rem .5rem 0 .5rem;
+  }
+
+  .dropdown-btn:hover {
+    color: var(--verde);
+  }
+
+  .dropdown-click {
+    background-color: var(--verde-escuro);
+    border-radius: 5px 5px 0 0 ;
+    color: var(--verde-natural);
+  }
+  
+  .dropdown-content {
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .dropdown-content a {
+    font-size: .8rem;
+  }
+
+  .dropdown-content a:hover {
+    color: var(--verde-claro);
+  }
+
+  .dropdown-content a:last-child {
+    border: none;
+  }
+  
+
+  .show-dropdown {
+    height: 150px;
+  }
+  
+
+  .navbar-menu--links {
+    width: auto;
+    font-size: .8rem;
+  }
+
+  .navbar-menu--links:hover {
+    color: var(--verde);
+  }
+
+  .navbar-access  {
+    width: auto;
+    column-gap: .8rem;
+
+    background-color: var(--verde-natural);
+  }
+
+  .navbar-access--links {
+    font-size: .8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: var(--verde-escuro);
+  }
+
+  .navbar-access--links:hover {
+    transform: scale(2);
+    color: var(--verde);
   }
 }

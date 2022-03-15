@@ -1,6 +1,11 @@
 .booking {
-  background-color: var(--verde-natural);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   padding: 1rem;
+  
+  background-color: var(--verde-natural);
   color: var(--verde-escuro);
 }
 
@@ -126,5 +131,115 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: .05rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .booking {
+    height: 200px;
+    
+    background-color: var(--verde-natural);
+  }
+  
+  .booking form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+
+    padding: 1rem;
+    border-radius: 10px;
+
+    background-color: #fff;
+  }
+
+  .form-title {
+    width: 100%;
+  }
+
+  .booking-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: .5rem;
+  }
+
+  .booking-label {
+    font-size: .8rem;
+  }
+
+  .booking-input  {
+    min-width: 100px;
+    width: 100px;
+  }
+
+  .booking-input:focus::placeholder {
+    color: var(--verde-claro);
+  }
+
+  .booking-btn {
+    width: 50px; 
+    
+    cursor: pointer;
+  }
+
+  .booking-btn:hover {
+    background-color: var(--verde-escuro);
+    color: var(--verde-claro);
+
+    transition: .3s ease-out;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .booking {
+    height: 200px;
+    
+    background-color: var(--verde-natural);
+  }
+  
+  .booking form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    background-color: #fff;
+  }
+
+  .form-title {
+    width: 100%;
+  }
+
+  .booking-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+  }
+
+  .booking-label {
+    font-size: 1rem;
+  }
+
+  .booking-input  {
+    min-width: 150px;
+    width: 150px;
+  }
+
+  .booking-input:focus::placeholder {
+    color: var(--verde-claro);
+  }
+
+  .booking-btn {
+    width: 60px; 
+    
+    cursor: pointer;
+  }
+
+  .booking-btn:hover {
+    background-color: var(--verde-escuro);
+    color: var(--verde-claro);
+
+    transition: .3s ease-out;
   }
 }
