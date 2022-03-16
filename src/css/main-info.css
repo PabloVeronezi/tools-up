@@ -66,6 +66,18 @@
   .banner {
     height: auto;
   }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ .main-info {
+   height: auto;
+   padding: 2rem;
+ }
+
+ .banner {
+   padding: 2rem;
+ }
 }
 
 @media screen and (min-width: 575px) and (max-width: 768px) {
@@ -92,19 +104,19 @@
   }
   
   .slogan-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .slogan-info {
-    width: 70%;
-    font-size: 2.5rem;
+    width: 80%;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
 
   .slogan-btn {
     width: 40%;
-    min-height: 4rem;
-    font-size: 1.3rem;
+    min-height: 3rem;
+    font-size: 1rem;
   }
 }
 
