@@ -62,7 +62,7 @@
   color: var(--verde-escuro);
 }
 
-@media screen and (min-width: 320px) and (max-width: 575px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
   .slogan-title {
     font-size: 2rem;
   }
