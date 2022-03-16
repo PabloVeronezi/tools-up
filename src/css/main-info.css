@@ -63,17 +63,8 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
-  .slogan-title {
-    font-size: 2rem;
-  }
-
-  .slogan-info {
-    font-size: 1rem;
-  }
-
-  .slogan-btn {
-    width: 50%;
-    font-size: .8rem;
+  .banner {
+    height: auto;
   }
 }
 
