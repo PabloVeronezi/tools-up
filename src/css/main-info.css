@@ -43,13 +43,13 @@
 
 .slogan-info {
   font-size: 1.5rem;
-  color: var(--cinza-claro);  
+  color: var(--cinza-claro);
 }
 
 .slogan-btn {
-  width: 100%;
+  width: 80%;
   min-height: 3rem;
-  
+
   background-color: var(--verde-claro);
   border: none;
   border-radius: 2rem;
@@ -67,17 +67,25 @@
     height: auto;
   }
 
+  .slogan-btn {
+    width: 50%;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- .main-info {
-   height: auto;
-   padding: 2rem;
- }
+  .main-info {
+    height: auto;
+    padding: 2rem;
+  }
 
- .banner {
-   padding: 2rem;
- }
+  .banner {
+    padding: 2rem;
+  }
+
+  .slogan-btn {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 575px) and (max-width: 768px) {
@@ -94,15 +102,15 @@
   .main-info {
     padding: 0;
   }
-  
+
   .banner {
     background-image: url("../img/banner-background.jpg");
   }
-  
+
   .banner-slogan {
     row-gap: 3rem;
   }
-  
+
   .slogan-title {
     font-size: 3rem;
   }
@@ -229,4 +237,3 @@
     transition: .3s ease-out;
   }
 }
-
